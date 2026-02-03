@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #1a202c;
+}
+
+/* Download Button */
+.download-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Inter", sans-serif;
+}
+
+.download-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.5);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+}
+
+.resume {
+  max-width: 850px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px 40px; /* Comfortable padding */
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #3b82f6;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 36px; /* Increased size */
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.role {
+  font-size: 15px;
+  font-weight: 600;
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 6px;
+}
+
+.contact {
+  font-size: 11.5px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.contact a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 12px; /* Increased separation */
+  page-break-inside: avoid;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 6px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #e2e8f0;
+  position: relative;
+}
+
+.section-content {
+  font-size: 11px; /* Readable size */
+  line-height: 1.5; /* Good breathing room */
+  color: #334155;
+}
+
+.section-content b {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+/* Education Specific */
+.education-header {
+  font-size: 10.5px;
+  color: #64748b;
+  font-style: italic;
+  margin-bottom: 3px;
+}
+
+.education-degree {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+
+.education-institution {
+  font-size: 11px;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+/* List Styling */
+ul {
+  margin: 4px 0 4px 18px;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 4px; /* Distinct items */
+  position: relative;
+  padding-left: 3px;
+}
+
+li::marker {
+  color: #3b82f6;
+  font-size: 0.9em;
+}
+
+/* Projects Specific */
+.project-item {
+  margin-bottom: 8px; /* Separation between projects */
+}
+
+.project-name {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 12px;
+}
+
+.skill-item {
+  font-size: 11px;
+}
+
+.skill-label {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Print Optimizations */
+@media print {
+  body {
+    background: white;
+    padding: 0;
+    margin: 0;
+    -webkit-print-color-adjust: exact;
+  }
+  .download-btn {
+    display: none !important;
+  }
+  .resume {
+    box-shadow: none;
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  h1 {
+    font-size: 32px;
+    margin-top: 5px;
+  }
+  .role {
+    font-size: 14px;
+  }
+  .contact {
+    font-size: 10.5px;
+  }
+  .section-title {
+    font-size: 12.5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1.5px solid #ccc;
+  }
+  .section-content {
+    font-size: 10.5px;
+    line-height: 1.4; /* Slightly reduced from 1.45 to prevent spillover */
+  }
+  .links-header {
+      font-size: 10px !important;
+      margin-top: 6px !important;
+  }
+  /* Adjusted margins to fill page without spillover */
+  @page {
+    size: A4;
+    margin: 10mm 15mm 0mm 15mm; /* Reduced bottom margin to 0 to catch the overflow */
+  }
+}

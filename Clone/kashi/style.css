@@ -1,0 +1,394 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.section1{
+    width: 100%;
+    height: 38px;
+    background-color: #850000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 0px;
+    color: #ffffff;
+    font-size: 16px;
+    margin: auto;
+}
+
+.third{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.third img{
+    height: 28px;
+    width: 26px;
+    border-radius: 50%;
+}
+
+.section2{
+    background-color: #001e60;
+    height: 103px;
+    display: grid;
+    grid-template-columns: 25% auto 15%;
+    padding-top: 10px;
+}
+
+.logo1{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    opacity: 1;
+}
+
+.section2 nav{
+    width: 100%;
+    align-content: center;
+    border-bottom: 2px solid #ffffff;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    margin: auto;
+    margin: 0px 8px;
+}
+
+.logo2{
+    display: flex;
+    justify-content: center;
+}
+
+.section3{
+    background-color: #000000;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section3 a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.section3 span {
+    color: #ffffff;
+}
+
+
+.m-section1{
+    background-color: #d0d6e2;
+    height: 165px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.footer-baar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.footer-baar span{
+    padding: 20px 0px;
+    color: #7a7a7a;
+}
+
+.m-section2{
+    
+    padding: 100px 0px 50px 0px;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+
+.m-section2 .first-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 10%;
+}
+
+.m-section2 .first-box h3{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #1a237e;
+}
+
+.first-box p{
+    margin: 0px auto;
+    line-height: 50px;
+    overflow: auto;
+}
+
+.first-box div{
+    display: flex;
+    justify-content: center;
+}
+
+.first-box button{
+    padding: 10px 18px;
+    border-radius: 7px; 
+    background-color: #1a237e;
+    color: #ffffff;
+}
+
+
+.m-box{
+    height: 500px;
+
+}
+
+.third-box-img{
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-box ul{
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.third-box li{
+    font-size: 16px;
+   display: flex;
+   padding: 13px 20px;
+}
+
+.m-section3{
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 38% auto;
+    border-top: 2px solid lightgray;
+}
+
+.m-section3-first-box{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+}
+
+.m-sec3-fb-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 5px; */
+    /* justify-content: flex-end; */
+}
+
+.m-sec3-fb-cont span{
+    display: block;
+}
+
+
+
+.m-section3-second-box{
+    display: flex;
+    justify-content: center;
+}
+
+.m-section4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2px;
+
+}
+
+.m-section4-container{
+    width: 85%;
+    height: 60px;
+    border-top: 2px solid rgb(255, 174, 0);
+    border-bottom: 2px solid rgb(255, 174, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.m-section5{
+    height: 150px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.m-section6 h1{
+    margin-top: 50px;
+    width: 100%;
+    height: 60px;
+    border-top: 2px solid rgb(255, 174, 0);
+    border-bottom: 2px solid rgb(255, 174, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facilities{
+    width: 100%;
+   padding: 10px 6% 0px;
+    display: grid;
+    grid-template-columns: 380px 380px 380px;
+    grid-template-rows: 300px 300px 300px;
+    justify-content: space-evenly;
+}
+
+.facilities-box img{
+    width: 379px;
+    height: 250px;
+    /* padding: 10px; */
+    border-radius: 10px;
+}
+
+.facilities-box{
+    padding: 0px 10px;
+}
+
+.facilities-box span{
+    display: block;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+   padding: 10px;
+}
+
+.recruiters{
+    display: flex;
+    justify-content: space-evenly;
+    opacity: .9;
+}
+
+.m-section7{
+    width: 100vw;
+    height: 300px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.m-section6 button {
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    font-weight: 500;
+}
+
+.depart-cont{
+    height: 1000px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-template-rows: auto auto auto; */
+    padding: 25px 6%;
+}
+
+.depart-box{
+    border-radius: 25px;
+    background-size: cover;
+    margin: 7px 0px;
+    text-align: center;
+
+}
+
+.depart-box1{
+    background-image:url(https://www.kashiit.ac.in/wp-content/uploads/elementor/thumbs/aimh-qfhk27f81fus72n9mnazmk3vcyyscwk7dsy81npxa0.webp);
+}
+
+.depart-box2{
+    background-image: url(https://www.kashiit.ac.in/wp-content/uploads/elementor/thumbs/bph-qfhjs1s06vy8qredxr946mdka3106n8mbj6cd0s2ig.webp);
+}
+
+.depart-box3{
+    background-image:url(https://www.kashiit.ac.in/wp-content/uploads/elementor/thumbs/aimh-qfhk27f81fus72n9mnazmk3vcyyscwk7dsy81npxa0.webp);
+}
+.depart-box4{
+    background-image:url(https://www.kashiit.ac.in/wp-content/uploads/elementor/thumbs/aimh-qfhk27f81fus72n9mnazmk3vcyyscwk7dsy81npxa0.webp);
+}
+.depart-box5{
+    background-image:url(https://www.kashiit.ac.in/wp-content/uploads/elementor/thumbs/aimh-qfhk27f81fus72n9mnazmk3vcyyscwk7dsy81npxa0.webp);
+}
+.depart-box6{
+    background-image:url(https://www.kashiit.ac.in/wp-content/uploads/elementor/thumbs/aimh-qfhk27f81fus72n9mnazmk3vcyyscwk7dsy81npxa0.webp);
+}
+.depart-box7{
+    background-image:url(https://www.kashiit.ac.in/wp-content/uploads/elementor/thumbs/aimh-qfhk27f81fus72n9mnazmk3vcyyscwk7dsy81npxa0.webp);
+}
+.depart-box8{
+    background-image:url(https://www.kashiit.ac.in/wp-content/uploads/elementor/thumbs/aimh-qfhk27f81fus72n9mnazmk3vcyyscwk7dsy81npxa0.webp);
+}
+.depart-box9{
+    background-image:url(https://www.kashiit.ac.in/wp-content/uploads/elementor/thumbs/aimh-qfhk27f81fus72n9mnazmk3vcyyscwk7dsy81npxa0.webp);
+}
+
+/* section footer */
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    height: 500px;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-box{
+    width: 252px;
+    /* margin: auto; */
+}
+
+.footer-box h1{
+    margin: 0px 0px 32px;
+}
+
+.footer-box address{
+    line-height: 30px;
+}
+
+.footer-box ul{
+    font-size: 30px;
+    margin: 0px 0px 32px;
+}
+
+.footer-box li{
+    margin: 15px 0px 15px;
+}
+
+/* .footer-box a{
+    width: 252px;
+    height: 252px;
+} */
+
+
+ .last{
+    background-color: #336f99;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+ }

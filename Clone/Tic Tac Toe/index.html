@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Full page overlay for restart animation -->
+  <div id="overlay"></div>
+
+  <div class="game-wrapper">
+
+    <!-- Left Player -->
+    <div class="player player-one active">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="Player One">
+      <h2>Player One (O)</h2>
+    </div>
+
+    <!-- Game Board -->
+    <div class="container">
+      <h1>Tic Tac Toe</h1>
+      <div class="board">
+        <div class="cell" id="0"></div>
+        <div class="cell" id="1"></div>
+        <div class="cell" id="2"></div>
+        <div class="cell" id="3"></div>
+        <div class="cell" id="4"></div>
+        <div class="cell" id="5"></div>
+        <div class="cell" id="6"></div>
+        <div class="cell" id="7"></div>
+        <div class="cell" id="8"></div>
+      </div>
+
+      <button id="restart">Restart</button>
+      <p id="result">Result:</p>
+    </div>
+
+    <!-- Right Player -->
+    <div class="player player-two">
+      <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="Player Two">
+      <h2>Player Two (X)</h2>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
